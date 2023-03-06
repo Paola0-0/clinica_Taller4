@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Clínica del Bosque</title>
+    <link rel="shortcut icon" type="image/png" href="static/img/Logo2_circle.png">
+</head>
+
+<body>
+    <main class="main">
+
+        <section id="principal" class="contenedor-1">
+            <header class="cabecera">
+                <div class="logo">
+                    <img src="../static/img/Logo.png" alt="Logo Clinica">
+                </div>
+                <div class="navegacion">
+                    <a href="#principal" class="link">Inicio</a>
+                    <a href="{{url_for('servicios')}}" class="link">Servicios</a>
+                    <a href="#especialistas" class="link">Nuestros Especialistas</a>
+                    <a href="#contacto" class="link">Contáctanos</a>
+                    <a href="{{url_for('login')}}" class="link_login">INGRESAR</a>
+                </div>
+            </header>
+            <div class="banner">
+                <div class="banner_textos">
+                    <h1>Centro Médico: Clínica del Bosque</h1>
+                    <p>Contamos con las principales especialidades médicas y quirúrgicas.</p>
+                    <a href="#datos">Nosotros</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="especialistas" class="contenedor-2">
+            <div class="texto">
+                <h2>Nuestros Especialistas</h2>
+                <p>Médicos con experiencia y reconocimiento profesional.</p>
+            </div>
+            <div class="fotos">
+                <div class="foto">
+                    <img src="static/img/DRA-BETTY-MOYA.jpg" alt="">
+                    <h3>DRA. BETTY MOYA</h3>
+                    <p>Especialista</p>
+                </div>
+                <div class="foto">
+                    <img src="static/img/Dr.-Mauricio-Atiencia.jpg" alt="">
+                    <h3>DR. MAURICIO ATIENCIA</h3>
+                    <p>Especialista</p>
+                </div>
+                <div class="foto">
+                    <img src="static/img/Dra-Monica-Portilla.jpg" alt="">
+                    <h3>DRA. MONICA PORTILLA</h3>
+                    <p>Especialista</p>
+                </div>
+                <div class="foto">
+                    <img src="static/img/dr-juan-carlos-paz.jpg" alt="">
+                    <h3>DR. JUAN CARLOS PAZ</h3>
+                    <p>Especialista</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="datos" class="contenedor-3">
+            <div class="contenedor-3_text">
+                <h2>Más sobre nosotros...</h2>
+                <p>Nuestro objetivo ha sido y siempré será el brindar un servicio de calidad a cada uno de nuestros
+                    pacientes a través de las mejores prácticas, y nuestros años de experiencia y certificaciones nos
+                    avalan</p>
+            </div>
+            <div class="contenedor-3_data">
+                <div class="data">
+                    <h3>10</h3>
+                    <p>AÑOS DE <br> EXPERIENCIA</p>
+                </div>
+                <div class="data">
+                    <h3>71,897</h3>
+                    <p>PACIENTES</p>
+                </div>
+                <div class="data">
+                    <h3>10</h3>
+                    <p>CERTIFICACIONES</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contenedor-4">
+            <div class="contenedor-4_contacto">
+                <div class="titulo">
+                    <h1>Estamos aquí para ayudarte</h1>
+                </div>
+                <div class="elementos">
+                    <div class="elemento">
+                        <div class="icono">
+                            <img src="static/img/telefono.png"/>
+                        </div>
+                        <div class="contacto_texto">
+                            <h1>Llámanos</h1>
+                            <h2>+593 2-243-2083</h2>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="icono">
+                            <img src="static/img/redes_sociales.png"/>
+                        </div>
+                        <div class="contacto_texto">
+                            <h1>Redes Sociales</h1>
+                            <h2>Facebook</h2>
+                            <h2>Instagram</h2>
+                            <h2>YouTube</h2>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <div class="icono">
+                            <img src="static/img/localizacion.png"/>
+                        </div>
+                        <div class="contacto_texto">
+                            <h1>Ubicación</h1>
+                            <h2>Entre pasaje, Av. Edmundo Carvajal Oe5 - 167, <br> Quito, Ecuador</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor-5">
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7979.605204815731!2d-78.493317!3d-0.160827!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59abeb718df17%3A0xa46d69c3b9180d58!2sClinica%20Del%20Bosque!5e0!3m2!1ses-419!2sus!4v1677499523258!5m2!1ses-419!2sus"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+<footer>
+    <p>Clínica del Bosque © 2023. Todos los derechos reservados.</p>
+</footer>
+
+</html>

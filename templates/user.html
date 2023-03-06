@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sesión</title>
+    <link rel="shortcut icon" type="image/png" href="/static/img/Logo2_circle.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='user.css') }}">
+</head>
+
+<body>
+    <main class="main">
+        <section id="principal" class="contenedor-1">
+            <header class="cabecera">
+                <div class="logo">
+                    <img src="../static/img/Logo.png" alt="Logo Clinica">
+                </div>
+                <div class="navegacion">
+                    <strong> {{session.name}} | <a href="{{ url_for('home') }}"> Salir</a>
+                </div>
+            </header>
+            <div class="banner">
+                <div class="banner_textos">
+                    <h1>Centro Médico: Clínica del Bosque</h1>
+                    <p>Contamos con las principales especialidades médicas y quirúrgicas.</p>
+                    <a href="#datos">Nosotros</a>
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>
